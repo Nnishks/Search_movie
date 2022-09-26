@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Movies | Watchlist Creator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!-- LinkedIn Card -->
+    <meta property="og:title"
+        content="Watchlist Creator App made with the OMDB API. Written in pure JavaScript, HTML, and CSS" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/caseyocampo/js-api-movie-watchlist/master/images/card-image.png" />
+    <meta property="og:description" content="Search for movies. Add or remove them from your watchlist." />
+    <meta property="og:url" content="https://caseyocampo.github.io/js-api-movie-watchlist/" />
+    <meta name="author" content="Casey Ocampo" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title"
+        content="Watchlist Creator App made with the OMDB API. Written in pure JavaScript, HTML, and CSS" />
+    <meta name="twitter:description" content="Search for movies. Add or remove them from your watchlist." />
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/caseyocampo/js-api-movie-watchlist/master/images/card-image.png" />
+</head>
+
+<body>
+    <header>
+        <div class="header-contents">
+            <h1>Find your film</h1>
+            <a href="watchlist.html" class="header-link">My Watchlist</a>
+        </div>
+    </header>
+    <main>
+        <div class="main-search-field">
+            <label aria-label="Search for a movie" class="hide">Search for a
+                movie</label>
+            <input type="text" for="submit" id="searchInput" placeholder="Search for a movie">
+            <button type="submit" value="Submit" id="searchBtn">Search</button>
+        </div>
+
+        <div class="main-contents" id="moviesList">
+            <div id="movielist-default-container">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.IAejPU8uaomL72IR6FNZIQHaE7&pid=Api&P=0" alt="Search movie list to start exploring movies."
+                    class="movie-icon movie-list-default-display">
+                <p class="text-grey-light fs-18 bold movie-list-default-display">Start exploring</p>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
